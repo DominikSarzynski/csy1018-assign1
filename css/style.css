@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+.navbar {
+    list-style: none;
+    margin: 5;
+    background: #B3E5FC;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+}
+
+.navbar a:hover {
+    transition: color 1s ease;
+    color: white;
+}
+
+.vitae {
+    list-style: none;
+    margin: 5;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    color: #757575;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+.inside {
+    padding: 0.5em
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
