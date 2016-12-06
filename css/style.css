@@ -1,101 +1,124 @@
-/* Dominik Sarzynski 16441814 */
+        /* Dominik Sarzynski 16441814 */
 
-body {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    background-image: url(skyline.jpg);
-    background-repeat: no-repeat;
-    /* source https://css-tricks.com/almanac/properties/b/background-image/ */
-    background-position: center;
-    background-size: auto;
-}
-
-h4 {
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: 200;
-    font-size: 1em;
-    font-size-adjust: auto;
-    color:
-}
-
-h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    height: 50px;
-    width: 300px;
-    color: #212121;
-}
-
-.navbar {
-    list-style: none;
-    margin: 5;
-    background: #B3E5FC;
-    display: flex;
-    justify-content: flex-end;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
-    position: relative;
-    z-index: 10;
-}
-
-.navbar a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: black;
-    width: 15%;
-    display: inline-block;
-    padding: 0.5em;
-}
-
-
-/* http://kamikazemusic.com/quick-tips/a-quick-css-based-back-to-top-link/ */
-
-#backToTop {
-    color: #BDBDBD;
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    background: #999;
-    display: block;
-    padding: 0.5em;
-    text-align: right;
-    width: 100%;
-}
-
-.navbar a:hover {
-    transition: color 1s ease;
-    color: white;
-}
-
-.title {
-    list-style: none;
-    margin: 5;
-    background-color: rgba(125, 125, 125, .8);
-    padding: 0px 20px 10px;
-    /*  background: #424242;*/
-    display: flex;
-    justify-content: space-around;
-    color: #757575;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-}
-
-.inside {
-    padding: 0.5em
-}
-
-footer {
-    background-color: black;
-    color: white;
-}
-@media only screen and (max-width: 768px) {
     body {
-        width: 100%
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        background-image: url(skyline.jpg);
+        background-repeat: no-repeat;
+        /* source https://css-tricks.com/almanac/properties/b/background-image/ */
+        background-position: center;
+        background-size: auto;
     }
+
+    img {
+        width: 30%;
+        height: auto;
+    }
+
+    h4 {
+        font-family: 'Raleway', sans-serif;
+        color: #212121;
+        font-weight: 200;
+        font-size: 1em;
+        font-size-adjust: auto;
+    }
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        height: 50px;
+        width: 600px;
+        color: #212121;
+    }
+
+    nav {
+        margin-bottom: 55.5px;
+    }
+
+    .navbar {
+        list-style: none;
+        margin: 0;
+        background: #616161;
+        display: flex;
+        justify-content: flex-start;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+        position: fixed;
+        z-index: 10;
+        margin-bottom: 3em;
+        width: 100%;
+        height: 3em;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: white;
+        width: 4em;
+        padding: 0.5em;
+    }
+
+    .image {
+        position: relative;
+        width: auto;
+    }
+
+    h3 {
+        position: absolute;
+        top: 2em;
+        left: 0;
+        width: 100%;
+    }
+
+    h3 span {
+        color: white;
+        font: bold 24px/45px 'Raleway', sans-serif;
+        letter-spacing: -1px;
+        background: #F5F5F5;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+    /* http://kamikazemusic.com/quick-tips/a-quick-css-based-back-to-top-link/ */
+
+    #backToTop {
+        top: 0;
+        z-index: 5;
+    }
+
+    .navbar a:hover {
+        transition: color 1s ease;
+        color: #FF4081;
+    }
+
+    .title {
+        list-style: none;
+        margin: 5;
+        background-color: rgba(125, 125, 125, .8);
+        padding: 0px 20px 10px;
+        display: flex;
+        justify-content: space-around;
+        color: #212121;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    .inside {
+        padding: 0.5em
+    }
+
+    footer {
+        background-color: #757575;
+    }
+
+    @media only screen and (max-width: 768px) {
+        body {
+            width: 100%
+        }
