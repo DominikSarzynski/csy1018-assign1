@@ -52,20 +52,6 @@
         text-rendering: optimizeLegibility;
     }
 
-    .topbar a {
-      text-decoration: none;
-      color: white;
-      padding-right: 2em;
-    }
-
-    .topbar a:hover {
-      transition: 0.5s ease;
-      color: black;
-      text-shadow: 2px 2px 2px #757575;
-    }
-
-
-
     /* ------------------------   Navbar   --------------*/
 
     nav {
@@ -104,6 +90,7 @@
         transition: 0.5s ease;
         color: black;
         text-shadow: 2px 2px 2px #757575;
+        transform: scale(1.2);
     }
     /*  ----------------------    Text on pictures (from https://css-tricks.com/text-blocks-over-image/) ----------------*/
 
@@ -137,38 +124,19 @@
      .fa-facebook {
         color: black;
     }
-
-    .side_contacts fa-facebook:hover {
-        transition: color 0.5s ease;
-        color: #FFFFFF;
-    }
-
      .fa-twitter {
         color: black;
     }
-
-    .side_contacts fa-twitter:hover {
-        transition: color 0.5s ease;
-        color: #FFFFFF;
-    }
-
      .fa-linkedin {
         color: black;
     }
-
-    .side_contacts fa-linkedin:hover {
-        transition: color 0.5s ease;
-        color: #FFFFFF;
-    }
-
     .fa-github {
         color: black;
     }
 
-    .side_contacts fa-github:hover {
-        transition: color 0.5s ease;
-        color: #FFFFFF;
-    }
+    
+
+
     /* --------------------- Title  ----------------------- */
 
     .title {
@@ -206,7 +174,9 @@
         margin-bottom: 3em;
         margin-left: auto;
         margin-right: auto;
+        background-color: #B3E5FC;
     }
+
     /* -----------------------  Topbar  ----------------------*/
 
     .topbar {
@@ -244,6 +214,20 @@
         width: 100%;
         height: auto;
     }
+
+    .topbar a {
+      text-decoration: none;
+      color: white;
+      padding-right: 2em;
+    }
+
+    .topbar a:hover {
+      transition: 0.5s ease;
+      color: black;
+      text-shadow: 2px 2px 2px #757575;
+    }
+
+
     /*----------------------------  Bio  -----------------------*/
 
     .bio {
@@ -253,6 +237,11 @@
         background-color: #B3E5FC;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
     }
+
+    .bio a {
+      text-decoration: none;
+    }
+
     /*------------------   CV   -------------------------------*/
 
     .cv {
@@ -295,6 +284,7 @@
         overflow: auto;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
         background: linear-gradient( to right, #FF5722 0%, #FF5722 30%, #F4511E 30%, #F4511E 70%, #E64A19 70%, #E64A19 100%);
+        /* source for linear gradient: http://www.w3schools.com/css/css3_gradients.asp */
         height: 100%;
         letter-spacing: 1px;
         line-height: 150%;
@@ -351,11 +341,14 @@
       color: #FFFFFF;
       text-shadow: 2px 2px 2px black;
       transition: 0.5s ease;
+      transform: scale(1.5);
     }
 
     .side_contacts a {
       color: black;
     }
+
+
 
 /* ------------------------- footer -----------------------------------*/
     .footer {
