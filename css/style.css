@@ -49,9 +49,7 @@
         letter-spacing: 1px;
         line-height: 2;
         text-align: center;
-        text-rendering: optimizeLegibility;
     }
-
     /* ------------------------   Navbar   --------------*/
 
     nav {
@@ -74,8 +72,6 @@
         text-align: center;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
     }
-
-
 
     .navbar a {
         text-decoration: none;
@@ -102,7 +98,6 @@
         background: rgba(0, 0, 0, 0.7);
         padding: 10px;
     }
-
     /* --------------------- Back to top arrow  --------------------------- */
 
     .aside {
@@ -120,23 +115,21 @@
     }
     /*  --------------------- icons in topbar --------------------------- */
 
+    .fa-facebook {
+        color: black;
+    }
 
-     .fa-facebook {
+    .fa-twitter {
         color: black;
     }
-     .fa-twitter {
+
+    .fa-linkedin {
         color: black;
     }
-     .fa-linkedin {
-        color: black;
-    }
+
     .fa-github {
         color: black;
     }
-
-    
-
-
     /* --------------------- Title  ----------------------- */
 
     .title {
@@ -161,6 +154,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+        /* box shadow source: https://css-tricks.com/almanac/properties/b/box-shadow/ */
     }
     /*   --------------------     Main     ----------------*/
 
@@ -176,7 +170,6 @@
         margin-right: auto;
         background-color: #B3E5FC;
     }
-
     /* -----------------------  Topbar  ----------------------*/
 
     .topbar {
@@ -216,18 +209,16 @@
     }
 
     .topbar a {
-      text-decoration: none;
-      color: white;
-      padding-right: 2em;
+        text-decoration: none;
+        color: white;
+        padding-right: 2em;
     }
 
     .topbar a:hover {
-      transition: 0.5s ease;
-      color: black;
-      text-shadow: 2px 2px 2px #757575;
+        transition: 0.5s ease;
+        color: black;
+        text-shadow: 2px 2px 2px #757575;
     }
-
-
     /*----------------------------  Bio  -----------------------*/
 
     .bio {
@@ -239,35 +230,41 @@
     }
 
     .bio a {
-      text-decoration: none;
+        text-decoration: none;
     }
-
     /*------------------   CV   -------------------------------*/
 
     .cv {
-      display: block;
-      text-align: center;
-      background-color: #B3E5FC;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
-      /*  display: flex;
+        display: block;
+        text-align: center;
+        background-color: #B3E5FC;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+        /*  display: flex;
         flex-direction: row;
         justify-content: space-between;  <---- this setup did not work for me at all... */
     }
 
     .cv p {
-      float: left;
-      text-align: justify;
+        float: left;
+        text-align: justify;
     }
 
     h2 span {
-      letter-spacing: 1px;
-      background: #F5F5F5;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 10px;
-      color: white;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
+        letter-spacing: 1px;
+        background: #F5F5F5;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 1px 1px rgba(0, 0, 0, 0.23);
     }
 
+    .fa-html5 {
+        color: #f4511e;
+    }
+
+    .fa-css3 {
+        color: #303f9f;
+    }
     /* ----------------------  Contact card -------------------*/
 
     .card {
@@ -275,7 +272,7 @@
         color: #FFFFFF;
         text-shadow: 2px 2px 4px #000000;
         line-height: 1;
-        width:inherit;
+        width: inherit;
         margin-left: auto;
         margin-right: auto;
         margin-top: 1em;
@@ -291,16 +288,15 @@
     }
 
     textarea {
-      background-color: #81d4fa;
-      border-radius: 3px;
+        background-color: #81d4fa;
+        border-radius: 3px;
     }
 
     input[type=text] {
-      height: 20px;
-      border-radius: 3px;
-      border: none;
+        height: 20px;
+        border-radius: 3px;
+        border: none;
     }
-
 
     input[type=submit] {
         padding: 1em;
@@ -336,30 +332,27 @@
         height: 4em;
     }
 
-
     .side_contacts i:hover {
-      color: #FFFFFF;
-      text-shadow: 2px 2px 2px black;
-      transition: 0.5s ease;
-      transform: scale(1.5);
+        color: #FFFFFF;
+        text-shadow: 2px 2px 2px black;
+        transition: 0.5s ease;
+        transform: scale(1.5);
     }
 
     .side_contacts a {
-      color: black;
+        color: black;
     }
+    /* ------------------------- footer -----------------------------------*/
 
-
-
-/* ------------------------- footer -----------------------------------*/
     .footer {
         background-color: #BDBDBD;
         height: 3em;
         padding: 1em;
         clear: both;
     }
+    /* --------------------- media queries for mobiles ----------------------*/
 
-/* --------------------- media queries for mobiles ----------------------*/
-    @media screen and (max-width: 1080px){
+    @media screen and (max-width: 1080px) {
         .images {
             flex-direction: column;
             padding: 1em;
@@ -369,29 +362,24 @@
             margin: auto;
             height: 100%;
         }
-
         .cv {
             flex-direction: column;
         }
         .navbar {
             justify-content: flex-start;
         }
-
         .card {
-          width: 100%;
+            width: 100%;
         }
-
         .side_contacts {
-          flex-direction: column;
-          height: auto;
+            flex-direction: column;
+            height: auto;
         }
-
         h1 {
-          width: auto;
-          height: 50%;
+            width: auto;
+            height: 50%;
         }
-
         input[type=submit] {
-          width: auto;
+            width: auto;
         }
     }
